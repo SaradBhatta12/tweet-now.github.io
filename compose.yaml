@@ -1,0 +1,22 @@
+services:
+  server:
+    build:
+      context: .
+    environment:
+      NODE_ENV: production
+      API_KEY: "naEoKroqaWH1Xmjv4JrJ4U2LN"
+      API_SECRET: "lbkId7N6gXzZuTF0igVFzMwXHxWf5fI9S4Ia6DYA3Gmf7ZE94k"
+      ACCESS_TOKEN: "1837273258338476032-EtM4IoXEzTuTunMhkTKAVBPPVETdtV"
+      ACCESS_SECRET: "wHrR8WmsPfpMMEKMVAX9Kb8gS4wonEUV4u9JO7cjE7g6j"
+      BEARER_TOKEN: "AAAAAAAAAAAAAAAAAAAAAAuNxgEAAAAAUjcLLzUrosEAkAT%2FdNfXFFVdxDo%3DCYHW716l06GhY9StFJgNBYBFxDL0t0olYoM8Zw0pC2iz8chRPj"
+      GEMINI_API_KEY: "AIzaSyBPfdKrMGXwH9cUdi2dzuzYz80D86wpB2w"
+      API: "AIzaSyBPfdKrMGXwH9cUdi2dzuzYz80D86wpB2w"
+      APP_ID: "1837273258338476032"
+      CLIENT_ID: "NWdsamlZYnMwVnNSX0FkSG1jVnI6MTpjaQ"
+      CLIENT_SECRET: "8SYOEPnUUMdx_jCux7q9uV_59gmiu_1fxRDaM2YCSZbjJVz5cr"
+      PORT: 3000
+    volumes:
+      - .:/app # Bind mount the current directory to /app in the container
+    working_dir: /app # Set the working directory inside the container
+    ports:
+      - 3000:3000
